@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //获取当前时间
+    function getTime() {
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    month = month < 10 ? '0' + month : month;
+    let day = date.getDate();
+    day = day < 10 ? '0' + day : day;
+    let hours = date.getHours();
+    hours = hours < 10 ? '0' + hours : hours;
+    let minutes = date.getMinutes();
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    let second = date.getSeconds();
+    second = second < 10 ? '0' + second : second;
+
+    return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + second;
+    
+}
+console.log(getTime());
+
+//获取n - m 的随机数
+function getRandom(n,m){
+    let random = Math.floor(Math.random() * (m + 1 - n) + n);
+    return random;
+}
+console.log(getRandom(1,10));
+//获取随机rgb
+function getRandomRgb(){
+    
+}
+</script>
+</html>
